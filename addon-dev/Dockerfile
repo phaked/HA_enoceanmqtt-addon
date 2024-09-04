@@ -11,6 +11,7 @@ RUN apk add --no-cache python3 py3-pip git && \
     python3 -m venv /app/venv && \
     . /app/venv/bin/activate && \
     python3 -m pip install --upgrade pip && \
+    pip3 install setuptools && \
     pip3 install pyyaml && \
     pip3 install tinydb && \
     pip3 install paho-mqtt==1.6.1 && \
